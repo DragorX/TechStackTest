@@ -3,7 +3,7 @@
 @import libs
 
 ::placeholder
-	color: #666
+	color: #000000
 
 ::selection
 	background-color: $accent
@@ -34,6 +34,33 @@ a
 		text-decoration: none
 		color: inherit
 
+.section-button
+	
+	button
+		background: #2F80ED
+		border-radius: 5px
+		color: white
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-align: center
+		border: none
+		padding: 10px
+		width: 141px
+		position: absolute
+		right: 0
+		margin-right: 60px
+		
+		a
+			margin: 0
+			font-family: Inter
+			font-size: 16px
+			font-style: normal
+			font-weight: 700
+			line-height: 19px
+			text-decoration: none
+
+
 
 
 .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
@@ -41,11 +68,6 @@ a
 
 @import "_standalone/headersection"
 @import "_standalone/footersection"
-@import "_standalone/headpagesection"
-@import "_standalone/aboutsection"
-@import "_standalone/educationsection"
-@import "_standalone/expsection"
-@import "_standalone/servicessection"
-@import "_standalone/biopsysection"
-@import "_standalone/formsection"
-@import "_standalone/addresssection"
+@import "_standalone/topnewssection"
+@import "_standalone/newsssection"
+@import "_standalone/detailednews"

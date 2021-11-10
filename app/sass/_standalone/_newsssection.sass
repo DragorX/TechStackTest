@@ -1,58 +1,85 @@
-.section-biopsy
-    padding: 0
+.section-news
+    // padding: 80px 0 0 0
     // display: flex
     background-color: white
-    color: black
-    width: 100%
-    margin: 0
+    width: 97%
+    margin: auto 30px
+    align-content: center
     // justify-content: space-between
-    .biopsy-title
-        justify-content: center
-        align-items: center
-        text-align: center
-        height: 60px
-        font-size: 36px
-        display: flex
-        h2
-            width: 450px
-            border-bottom: solid 5px #509AF3
-            height: 60px
-            font-size: 36px
-            font-weight: 400
-            padding-bottom: 65px 
 
-
-    .biopsy-holder
+    .news-holder
         display: flex
-        padding-top: 85px
         justify-content: space-between
         flex-wrap: wrap
         margin: 0
         width: 100%
         .holder-item
-            justify-content: center
-            align-items: center 
-            width: 38%
+            
+            // justify-content: space-between
+            // align-items: center 
+            width: 27%
             display: flex
             flex-direction: column
-            margin-bottom: 90px
-            img
-                margin-bottom: 15px 
-            h2
-                border-bottom: solid 2px #509AF3
-                height: 60px
-                font-size: 36px
-                font-weight: 400
-                color: #509AF3
-                padding-bottom: 65px
-                width: 100%
-                text-align: justify
+            margin: 30px
+            box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25)
+            border-radius: 5px
+            object-fit: cover
+            a
+                img
+                    object-fit: cover
+            
+            .item-content
+                padding: 18px 24px 25px 17px
+                justify-content: space-between
+                height: 100%
+                display: flex
+                flex-direction: column
+                text-align: left
 
-            p
-                padding-top: 20px
-                text-align: justify
-                font-size: 20px
-                font-weight: 400
+                a
+                    font-family: Inter
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 24px
+                    color: #2D3748
+                    margin: 0
+
+                p
+                    font-family: Inter
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 17px
+                    color: #718096
+                    margin: 0
+                    text-align: justify
+
+                
+                &>span
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    margin: 0
+                    align-items: center
+                    &>p
+                        margin: 0
+                        font-family: Inter
+                        font-size: 12px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 15px
+                        color: #718096
+
+                    &>a
+                        margin: 0
+                        font-family: Inter
+                        font-size: 12px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 15px
+                        color: #2D3748
+
 
 /*==========  Desktop First  ==========*/
 
@@ -70,15 +97,15 @@
 			
 // ≥576px
 +media-breakpoint-down(xs)
-    .section-biopsy
-        padding: 0
+    .section-services
+        padding: 80px 0 0 0
         // display: flex
         background-color: white
         color: black
         width: 100%
         margin: 0
         // justify-content: space-between
-        .biopsy-title
+        .services-title
             justify-content: center
             align-items: center
             text-align: center
@@ -93,8 +120,7 @@
                 font-weight: 400
                 padding-bottom: 65px 
 
-
-        .biopsy-holder
+        .services-holder
             display: flex
             padding-top: 85px
             justify-content: space-between
